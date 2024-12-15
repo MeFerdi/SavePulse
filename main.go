@@ -17,6 +17,7 @@ func init() {
 }
 
 func main() {
+	gin.SetMode(gin.ReleaseMode)
 	router := gin.Default()
 	router.Use(cors.New(cors.Config{
 		AllowOrigins:     []string{"https://savepulse.vercel.app"},
